@@ -12,7 +12,7 @@ const Home = () => {
                 <Navigation />
                 <div className='flex flex-col min-h-screen'>
                     <IndexMain />
-                    <Footer setshowSns={() => setshowSns(!showSns)} />
+                    <Footer showSns={showSns} setshowSns={() => setshowSns(!showSns)} />
                 </div>
 
             </div>
