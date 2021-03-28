@@ -1,14 +1,17 @@
-import Head from 'next/head'
+
 import Navigation from '../components/Navigation'
 import IndexMain from '../components/IndexMain'
 import Footer from '../components/Footer'
 const Home = () => {
     return (
         <>
-            <div className='flex flex-col min-h-screen'>
+            <div>
                 <Navigation />
-                <IndexMain />
-                <Footer />
+                <div className='flex flex-col min-h-screen'>
+                    <IndexMain />
+                    <Footer />
+                </div>
+
             </div>
         </>
     )
