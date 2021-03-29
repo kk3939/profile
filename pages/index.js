@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation'
 import IndexMain from '../components/IndexMain'
 import Footer from '../components/Footer'
 import {useState} from 'react'
+
 const Home = () => {
     const [showSns, setshowSns] = useState(false)
     console.log(showSns);

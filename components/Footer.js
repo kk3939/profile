@@ -1,6 +1,6 @@
 const Footer = ({ showSns, setshowSns }) => {
   return (
-    <footer className='flex justify-center py-10 px-10 items-center bg-gray-200 bg-opacity-25'>
+    <footer className='flex justify-center py-10 px-10 items-center bg-gray-100 bg-opacity-25'>
       <div className='justify-center'>
         <div className='text-center py-2'>
           <p className='block border-b-2 m-1 border-gray text-xl font-serif'>SNS</p>
