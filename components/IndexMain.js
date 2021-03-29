@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Tab from './Tab'
 
 const IndexMain = () => {
     return (
@@ -6,22 +6,8 @@ const IndexMain = () => {
         <div className='flex-grow my-2'>
 
             <div className='flex items-center flex-wrap justify-center'>
-                <div className='relative'>
-                    <Image src="/DSC00722.jpg" width="600" height="400" className='bg-cover' loading="eager" />
-                    <nav className='flex justify-end absolute top-2 right-0 text-white'>
-                        <ul className='flex'>
-                            <li className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer'>
-                                About
-                            </li>
-                            <li className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer'>
-                                To do
-                            </li>
-                            <li className='block m-3 font-serif text-base  border-b-2 border-white cursor-pointer'>
-                                Publish
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                
+                <Tab />
 
                 <div className='mobile:bg-gray-200 mobile:bg-opacity-25 tablet:bg-white'>
                     <p className='m-12 font-serif text-8xl items-center'>
