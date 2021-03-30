@@ -3,13 +3,14 @@ import nprogress from 'nprogress'; //nprogress module
 import 'nprogress/nprogress.css'; //styles of nprogress
 import { useEffect } from 'react'
 
+nprogress.configure({ showSpinner: true, speed: 400, minimum: 0.25 })
 function MyApp({ Component, pageProps }) {
+   
     if (process.browser) {
-        // バーの表示開始
         nprogress.start()
     }
+
     useEffect(() => {
-        // バーの表示終了
         nprogress.done()
     })
 

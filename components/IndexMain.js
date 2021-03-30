@@ -40,6 +40,7 @@ const IndexMain = () => {
                         </div>
                     </Link>
                 </div>
+                
             </div>
         </>
 

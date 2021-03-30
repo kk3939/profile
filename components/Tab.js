@@ -7,18 +7,18 @@ const Tab = () => {
             <nav className='flex justify-end absolute top-2 right-0 text-white'>
                 <ul className='flex'>
                     <Link href='/about'>
-                        <li className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer'>
+                        <li className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer hover:border-transparent'>
                             About
                         </li>
                     </Link>
 
                     <Link href='/todo'>
-                        <li className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer'>
+                        <li className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer hover:border-transparent'>
                             To do
                         </li>
                     </Link>
                     <Link href='/publish'>
-                        <li className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer'>
+                        <li className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer hover:border-transparent'>
                             Publish
                         </li>
                     </Link>
