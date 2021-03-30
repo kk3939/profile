@@ -1,4 +1,4 @@
-const Footer = ({ showSns, setshowSns }) => {
+const Footer = () => {
   return (
     <footer className='flex justify-center py-10 px-10 items-center bg-gray-100 bg-opacity-25'>
       <div className='justify-center'>
