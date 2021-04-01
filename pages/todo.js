@@ -45,6 +45,7 @@ export const todo = () => {
                         Instagramはこちら
                     </a>
                 </div>
+                
                 <div className='py-2 px-8'>
                     <p className='py-1 px-5 font-serif text-xl text-center'>Training</p>
                     <p className='text-center px-5 font-serif py-1 text-sm'>
