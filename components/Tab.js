@@ -17,11 +17,11 @@ const Tab = () => {
                             what I work on
                         </li>
                     </Link>
-                    <Link href='/publish'>
+                    {/* <Link href='/publish'>
                         <li className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer hover:border-transparent'>
                             Publish
                         </li>
-                    </Link>
+                    </Link> */}
                 </ul>
             </nav>
         </div>
