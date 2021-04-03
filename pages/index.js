@@ -1,5 +1,5 @@
 
-import Navigation from '../components/Navigation'
+import Navigation from '../components/navigation'
 import IndexMain from '../components/IndexMain'
 import Footer from '../components/Footer'
 

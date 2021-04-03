@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from '../components/Navigation'
+import Navigation from '../components/navigation'
 import Image from 'next/image'
 import Tab from '../components/Tab'
 import Footer from '../components/Footer'
