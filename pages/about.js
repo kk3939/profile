@@ -17,7 +17,7 @@ const about = () => {
                 </div>
             </div>
             <div className='my-10 mx-5 flex items-center flex-wrap justify-center'>
-                    <Image src="/pinPicture.jpg" width='200' height='266' className='rounded-full' />
+                    <Image src="/pinPicture.jpg" width='200' height='266' className='rounded-full' priority={true} />
                     <div className='justify-center'>
                         <p className='pt-5 pb-2 px-2 text-center text-xl font-serif'>
                             名前 : 久保 京介
