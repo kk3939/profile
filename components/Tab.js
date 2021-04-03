@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'
 import Link from 'next/link'
 const Tab = () => {
     const pages = [
@@ -7,13 +7,14 @@ const Tab = () => {
     ]
     return (
         <div className='relative'>
-            <Image src="/DSC00722.jpg" width="600" height="400" className='bg-cover' loading="lazy" alt='湘南' />
+            <Image src="/DSC00722.jpg" width="600" height="400" className='bg-cover' alt='湘南' priority={true}/>
+            {/* <img src="/DSC00722.jpg" alt="湘南"/> */}
             <nav className='flex justify-end absolute top-2 right-0 text-white'>
                 <ul className='flex'>
                     {
                         pages.map((page) =>
-                            <Link href={page.link}>
-                                <li key={page.id} 
+                            <Link href={page.link} key={page.id}>
+                                <li
                                     className='block m-3 font-serif text-base border-b-2 border-white cursor-pointer hover:border-transparent'>
                                     {page.displayName}
                                 </li>

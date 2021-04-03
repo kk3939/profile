@@ -23,14 +23,16 @@ const IndexMain = () => {
                 </div>
 
                 <div className='flex items-center flex-wrap justify-center py-10'>
-                    {pages.map((page) =>
-                        <Link href={page.link} key={page.id}>
-                            <div className='mx-24 p-5 hover:bg-gray-200 cursor-pointer'>
-                                <p className='py-2 font-serif text-4xl border-b-2 border-gray text-center'>{page.displayName}</p>
-                                <p className='text-center font-serif py-5 text-base'>{page.detail}</p>
-                            </div>
-                        </Link>
-                    )}
+                    {
+                        pages.map((page) =>
+                            <Link href={page.link} key={page.id}>
+                                <div className='mx-24 p-5 hover:bg-gray-200 cursor-pointer'>
+                                    <p className='py-2 font-serif text-4xl border-b-2 border-gray text-center'>{page.displayName}</p>
+                                    <p className='text-center font-serif py-5 text-base'>{page.detail}</p>
+                                </div>
+                            </Link>
+                        )
+                    }
                 </div>
 
             </div>

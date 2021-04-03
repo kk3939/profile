@@ -2,7 +2,7 @@ import React from 'react'
 import Navigation from '../components/navigation'
 import Tab from '../components/Tab'
 import Footer from '../components/Footer'
-export const todo = () => {
+const todo = () => {
     const pages = [
         {
             id: 1,
