@@ -29,11 +29,20 @@ const todo = () => {
             id: 3,
             title: 'Training',
             contents: '筋トレ歴約1年半で、主にウェイトトレーニングに取り組んでいます。'
-                + '2021年3月のMax記録ですが、BP95kg,DL150kg,SQ160kgです。'
+                + '2021年3月のMax記録ですが、BP95kg,DL150kg,SQ160kgです。' 
                 + '※身長175cm,体重68kg',
             addDetailLink: '',
             addDetail: ''
             // 空文字はfalseになり表示されない
+        }
+        ,
+        {
+            id: 4,
+            title: 'Coaching',
+            contents: '日本コーチ連盟コーチアカデミーのコーチ養成プログラム基礎/応用コースを2020年11月14日に修了しました。'
+                + 'セルフコーチングとコーチングを活用したコミュニケーションが強みです。',
+            addDetailLink: '',
+            addDetail: ''
         }
     ]
     return (
