@@ -10,8 +10,14 @@ const about = () => {
             <Navigation />
             <div className='flex items-center flex-wrap justify-center py-5 '>
                 <Tab />
-                <div className='my-10 mx-5 flex items-center flex-wrap justify-center'>
-                    <Image src="/pinPicture.jpg" width='200' height='266' className='rounded-full' />
+            </div>
+            <div className='flex items-center justify-center pt-5 pb-1'>
+                <div className='mx-24 p-2'>
+                    <p className='block font-serif text-4xl border-b-2 border-gray text-center'>About</p>
+                </div>
+            </div>
+            <div className='my-10 mx-5 flex items-center flex-wrap justify-center'>
+                    <Image src="/pinPicture.jpg" width='200' height='266' className='rounded-full' priority={true} />
                     <div className='justify-center'>
                         <p className='pt-5 pb-2 px-2 text-center text-xl font-serif'>
                             名前 : 久保 京介
@@ -34,8 +40,6 @@ const about = () => {
                     </div>
 
                 </div>
-
-            </div>
             <Footer />
         </>
     )

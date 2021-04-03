@@ -14,8 +14,7 @@ function MyApp({ Component, pageProps }) {
         nprogress.done()
     })
 
-    return <Component {...pageProps }
-    />
+    return <Component {...pageProps } />
 }
 
 export default MyApp
