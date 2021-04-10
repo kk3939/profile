@@ -13,12 +13,12 @@ const IndexMain = () => {
                     <Tab />
 
                     <div className='mobile:bg-gray-200 mobile:bg-opacity-25 tablet:bg-white'>
-                        <p className='m-12 font-serif text-8xl items-center'>
+                        <p className='m-12 font-serif text-5xl tablet:text-8xl items-center'>
                             Happy Hacking Life!
-                    </p>
+                        </p>
                         <p className='m-12 font-serif text-xl'>
                             Thank you for visiting my site.
-                    </p>
+                        </p>
                     </div>
                 </div>
 
@@ -27,8 +27,12 @@ const IndexMain = () => {
                         pages.map((page) =>
                             <Link href={page.link} key={page.id}>
                                 <div className='mx-24 p-5 hover:bg-gray-200 cursor-pointer'>
-                                    <p className='py-2 font-serif text-4xl border-b-2 border-gray text-center'>{page.displayName}</p>
-                                    <p className='text-center font-serif py-5 text-base'>{page.detail}</p>
+                                    <p className='py-2 font-serif text-4xl border-b-2 border-gray text-center'>
+                                        {page.displayName}
+                                    </p>
+                                    <p className='text-center font-serif py-5 text-base'>
+                                        {page.detail}
+                                    </p>
                                 </div>
                             </Link>
                         )
