@@ -7,7 +7,7 @@ const Tab = () => {
     ]
     return (
         <div className='relative'>
-            <Image src="/syounann.jpg" width={600} height={400} className='bg-cover' priority={true}/>
+            <Image src={"/syounann.jpg"} width={600} height={400} className='bg-cover' priority={true}/>
             <nav className='flex justify-end absolute top-2 right-0 text-white'>
                 <ul className='flex'>
                     {
