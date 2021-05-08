@@ -1,6 +1,10 @@
 import Tab from './Tab'
 import Link from 'next/link'
 const IndexMain = () => {
+    const pages = [
+        { id: 1, link: '/about', displayName: 'about', detail: 'Profile,etc.' },
+        { id: 2, link: '/todo', displayName: 'what I work on', detail: 'My favorite things.' }
+    ]
     return (
         <>
             <div className='flex-grow my-2'>
@@ -19,26 +23,18 @@ const IndexMain = () => {
                 </div>
 
                 <div className='flex items-center flex-wrap justify-center py-10'>
-                    <Link href='/about'>
-                        <div className='mx-24 p-5 hover:bg-gray-200 cursor-pointer'>
-                            <p className='py-2 font-serif text-4xl border-b-2 border-gray text-center'>About</p>
-                            <p className='text-center font-serif py-5 text-base'>Profile,<br />carrer,etc.</p>
-                        </div>
-                    </Link>
-                    <Link href='/todo'>
-                        <div className='mx-24 p-5 hover:bg-gray-200 cursor-pointer'>
-                            <p className='block py-2 font-serif text-4xl border-b-2 border-gray text-center'>what I work on.</p>
-                            <p className='text-center font-serif py-5 text-base'>My favorite things.</p>
-                        </div>
-                    </Link>
-                    <Link href='publish'>
-                        <div className='mx-24 p-5 hover:bg-gray-200 cursor-pointer'>
-                            <p className='block py-2 font-serif text-4xl border-b-2 border-gray text-center'>Publish</p>
-                            <p className='text-center font-serif py-5 text-base'>Article I publish.</p>
-                        </div>
-                    </Link>
+                    {
+                        pages.map((page) =>
+                            <Link href={page.link} key={page.id}>
+                                <div className='mx-24 p-5 hover:bg-gray-200 cursor-pointer'>
+                                    <p className='py-2 font-serif text-4xl border-b-2 border-gray text-center'>{page.displayName}</p>
+                                    <p className='text-center font-serif py-5 text-base'>{page.detail}</p>
+                                </div>
+                            </Link>
+                        )
+                    }
                 </div>
-                
+
             </div>
         </>
 
