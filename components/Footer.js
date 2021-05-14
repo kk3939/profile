@@ -1,12 +1,14 @@
 const Footer = () => {
   const snsArray = [
     {id: 1 ,name:'Instagram',link: 'https://www.instagram.com/kyo9bo/?hl=ja'},
-    {id: 2 ,name:'Twitter',link: 'https://twitter.com/kyo9bo'},
+    {id: 2 ,name:'Twitter',link: 'https://twitter.com/kyo9bonnn'},
     {id: 3 ,name:'Facebook',link: 'https://www.facebook.com/kyousuke.kubo.7'},
     {id: 4 ,name:'Qiita',link: 'https://qiita.com/kyo51310'},
     {id: 5 ,name:'Zenn.',link: 'https://zenn.dev/kyo9bo'},
     {id: 6 ,name:'Github',link: 'https://github.com/kk3939'},
+    {id: 6 ,name:'note',link: 'https://note.com/kyo9bo_note'},
   ]
+
   return (
     <footer className='flex justify-center py-10 px-10 items-center bg-gray-100 bg-opacity-25'>
       <div className='justify-center'>
